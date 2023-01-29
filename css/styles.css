@@ -4,6 +4,41 @@
 .link {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+/*container*/
+
+.container {
+  width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -28,6 +63,7 @@ body {
   --fourth-color: #4d5ae5;
   --fifth-color: #f4f4fd;
   --sixth-color: #e7e9fc;
+  --next-color: #f4f4fd;
   --text-color: #434455;
   --first-line-height: 1.5;
   --second-line-height: 1.33;
@@ -44,11 +80,21 @@ body {
   --third-font-size: 56px;
   --fourth-font-size: 36px;
 }
+
 /*======================HEADER===========================*/
+
 .header {
   background: var(background-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 .header-navigation {
+  display: flex;
+  align-items: center;
 }
 .logo-header {
   font-family: 'Raleway', sans-serif;
@@ -61,7 +107,37 @@ body {
 .piece {
   color: var(--fourth-color);
 }
+
+.header-list {
+  display: flex;
+  margin-left: 76px;
+}
+.header-item {
+  background-color: red;
+  margin-right: 40px;
+}
+.header-item:last-child {
+  margin-right: 0;
+}
+.adress {
+  margin-left: auto;
+}
+.header-contact {
+  display: flex;
+}
+.header-contact-item {
+  background-color: orange;
+  margin-right: 40px;
+}
+.header-contact-item:last-child {
+  margin-right: 0;
+}
+
 .header-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-weight: var(--typical-font-weight);
   font-size: var(font-size);
   line-height: var(--first-line-height);
@@ -83,16 +159,30 @@ body {
 }
 /*======================/HEADER==========================*/
 /*======================HERO=============================*/
+
 .hero {
+  margin-top: 0;
+  margin-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 203px;
+  text-align: center;
+  outline: 1px solid red;
   background: var(--second-color);
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 39px;
+
   font-size: var(--third-font-size);
   line-height: var(--fours-line-height);
   letter-spacing: var(--first-letter-spacing);
   color: var(--first-color);
 }
 .hero-btn {
+  border-radius: 4px;
+  padding: 16px, 32px;
+  min-width: 169px;
+
   font-family: inherit;
   font-weight: var(--typical-font-weight);
   font-size: var(font-size);
@@ -107,8 +197,33 @@ body {
 }
 /*======================/HERO============================*/
 /*====================SOLUTIONS==========================*/
+.solutions {
+  padding-top: 0;
+  padding-bottom: 120;
+  outline: 1px solid green;
+}
+.solutions-page-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
 
+/*UL*/
+.solutions-list {
+  outline: 1px solid blue;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+/*LI*/
+.solutions-list > .solutioun-item {
+}
 .section-subtitle {
+  margin-top: 0;
+  margin-bottom: 8;
+
   font-weight: var(--typical-font-weight);
   font-size: var(--first-font-size);
   line-height: var(--third-line-height);
@@ -123,29 +238,76 @@ body {
 /*====================/SOLUTIONS=========================*/
 /*=====================SERVICES==========================*/
 
+.services {
+  padding-top: 0;
+  padding-bottom: 120px;
+  outline: 1px solid orange;
+}
+.container {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section-title.centered {
+  text-align: center;
+}
 .section-title {
+  margin-top: 0;
+  margin-bottom: 72px;
+
   font-size: var(--fourth-font-size);
   line-height: var(--fifth-line-height);
   letter-spacing: var(--first-letter-spacing);
   text-transform: capitalize;
   color: var(--second-color);
 }
+.services-image-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.services-image-item {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /*====================/SERVICES==========================*/
 /*======================ABOUT============================*/
 .about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  outline: 1px solid red;
   background: var(--fifth-color);
+}
+.section-title {
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+.about-img {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+.section-subtitle {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.section-text {
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 /*=====================/ABOUT============================*/
 /*====================FOOTER=============================*/
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  outline: 1px solid red;
   background: var(--second-color);
 }
 .logo-footer {
+  margin-top: 0;
+  margin-bottom: 16px;
   font-family: 'Raleway', sans-serif;
-  font-weight: var(--first-font-weight);
-  font-size: var(--second-font-size);
+  font-weight: var(first-font-weight);
+  font-size: (var(--second-font-size));
   line-height: var(--second-line-height);
-  color: var(--second-color);
+  color: var(--next-color);
 }
 .footer-text {
   line-height: var(--first-line-height);
