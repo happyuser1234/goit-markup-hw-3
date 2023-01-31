@@ -21,10 +21,10 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
-.button {
+button {
   cursor: pointer;
 }
-.img {
+img {
   display: block;
 }
 .centered {
@@ -34,19 +34,16 @@ ul {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
 /*container*/
 
 .container {
-  width: 1128px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid red;
-}
-.solutions-list {
-  display: flex;
-  gap: 24px;
 }
 
 body {
@@ -225,8 +222,10 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  gap: 24px;
 }
-/*h3*/
+/*h3-подзаголовок*/
 
 .solution-subtitle {
   margin-top: 0;
@@ -239,7 +238,7 @@ body {
   letter-spacing: var(--first-letter-spacing);
   color: var(--second-color);
 }
-/*P*/
+/*P-текст*/
 .solution-text {
   text-align: left;
 
@@ -320,9 +319,13 @@ body {
   outline: 1px solid red;
   background: var(--second-color);
 }
+
 .logo-footer {
   margin-top: 0;
   margin-bottom: 16px;
+  margin-left: 156px;
+  margin-right: 1169px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: var(first-font-weight);
   font-size: (var(--second-font-size));
@@ -330,6 +333,10 @@ body {
   color: var(--next-color);
 }
 .footer-text {
+  width: 264px;
+  margin-left: 156px;
+  margin-right: 1020px;
+
   line-height: var(--first-line-height);
   letter-spacing: var(--first-letter-spacing);
   background-color: var(--second-color);
@@ -337,6 +344,21 @@ body {
 }
 /*===================/FOOTER=============================*/
 /*=================MAIN MENU=============================*/
+.menu {
+  margin-top: 96px;
+  margin-bottom: 120px;
+}
+.container {
+  margin-top: 0;
+}
+/*ul*/
+
+.menu-list {
+  display: flex;
+  column-gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
 
 .menu-btn {
   font-family: inherit;
@@ -350,5 +372,43 @@ body {
 .menu-btn:hover {
   background-color: var(--third-color);
   color: var(--first-color);
+}
+.button {
+  border-radius: 4px;
+  padding: 12px, 24px;
+  min-width: 55px;
+}
+/*ul*/
+.portfolio-list {
+  outline: 1px solid red;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.box {
+  padding-left: 16px;
+}
+/*li*/
+.portfolio-item {
+  outline: 1px solid red;
+}
+.portfolio-item * {
+  outline: 1px solid green;
+}
+/*h2*/
+.sec-subtitle {
+  line-height: var(--third-line-height);
+  letter-spacing: var(--first-letter-spacing);
+  color: var(--second-color);
+}
+/*p*/
+.sec-text {
+  line-height: var(--first-line-height);
+  letter-spacing: var(--first-letter-spacing);
+  color: var(--text-color);
 }
 /*================/MAIN MENU=============================*/
