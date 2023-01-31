@@ -43,7 +43,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
 }
 
 body {
@@ -72,6 +71,7 @@ body {
   --sixth-color: #e7e9fc;
   --next-color: #f4f4fd;
   --text-color: #434455;
+  --
   --first-line-height: 1.5;
   --second-line-height: 1.33;
   --third-line-height: 1.2;
@@ -123,7 +123,7 @@ body {
 
 /*li*/
 .header-item {
-  background-color: red;
+
   margin-right: 40px;
 }
 .header-item:last-child {
@@ -136,7 +136,7 @@ body {
   display: flex;
 }
 .header-contact-item {
-  background-color: orange;
+ 
   margin-right: 40px;
 }
 .header-contact-item:last-child {
@@ -176,7 +176,7 @@ body {
   padding-top: 188px;
   padding-bottom: 203px;
   text-align: center;
-  outline: 1px solid red;
+  
   background: var(--second-color);
 }
 .hero-title {
@@ -209,7 +209,7 @@ body {
 /*====================SOLUTIONS==========================*/
 .solutions {
   padding-top: 0;
-  outline: 1px solid green;
+  
 }
 .solutions-page-title {
   margin-top: 0;
@@ -218,7 +218,7 @@ body {
 
 /*UL*/
 .solutions-list {
-  outline: 1px solid red;
+ 
   padding: 0;
   margin: 0;
   list-style: none;
@@ -252,7 +252,7 @@ body {
 .services {
   padding-top: 0;
   padding-bottom: 120px;
-  outline: 1px solid orange;
+  
 }
 
 .section-title {
@@ -274,7 +274,7 @@ body {
 }
 /*li*/
 .services-image-item {
-  outline: 1px solid red;
+  
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 24px;
@@ -295,28 +295,30 @@ body {
 }
 /*li*/
 .about-img {
-  outline: 1px solid red;
+ 
   margin-top: 0;
   margin-bottom: 32px;
   margin-right: 24px;
 }
+.set {
+  text-align: center;
+}
 /*h3*/
 .section-subtitle {
-  text-align: center;
+  
   margin-bottom: 8px;
 }
 /*p*/
 .section-text {
   margin-top: 0;
   margin-bottom: 32px;
-  text-align: center;
+  
 }
 /*=====================/ABOUT============================*/
 /*====================FOOTER=============================*/
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
-  outline: 1px solid red;
   background: var(--second-color);
 }
 
@@ -380,7 +382,6 @@ body {
 }
 /*ul*/
 .portfolio-list {
-  outline: 1px solid red;
   padding: 0;
   margin: 0;
 
@@ -391,24 +392,29 @@ body {
 }
 .box {
   padding-left: 16px;
+  border-bottom: 1px solid var(--sixth-color);
+  border-left: 1px solid var(--sixth-color);
+  border-right: 1px solid var(--sixth-color);
 }
 /*li*/
 .portfolio-item {
-  outline: 1px solid red;
 }
-.portfolio-item * {
+/*.portfolio-item * {
   outline: 1px solid green;
-}
+}-для выделения цветом */
+
 /*h2*/
 .sec-subtitle {
   line-height: var(--third-line-height);
   letter-spacing: var(--first-letter-spacing);
   color: var(--second-color);
+  margin-bottom: 8px;
 }
 /*p*/
 .sec-text {
   line-height: var(--first-line-height);
   letter-spacing: var(--first-letter-spacing);
   color: var(--text-color);
+  margin-bottom: 32px;
 }
 /*================/MAIN MENU=============================*/
