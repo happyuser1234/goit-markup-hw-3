@@ -48,7 +48,7 @@ img {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  background-color: #ffffff;
+  background-color: var(--first-color);
 }
 .visually-hidden {
   position: absolute;
@@ -71,7 +71,6 @@ body {
   --sixth-color: #e7e9fc;
   --next-color: #f4f4fd;
   --text-color: #434455;
-  --
   --first-line-height: 1.5;
   --second-line-height: 1.33;
   --third-line-height: 1.2;
@@ -89,11 +88,8 @@ body {
 }
 
 /*======================HEADER===========================*/
-
 .header {
-  background: var(background-color);
-  padding-top: 24px;
-  padding-bottom: 24px;
+  border-bottom: 1px solid var(--sixth-color);
 }
 .main-nav {
   display: flex;
@@ -123,7 +119,6 @@ body {
 
 /*li*/
 .header-item {
-
   margin-right: 40px;
 }
 .header-item:last-child {
@@ -136,7 +131,6 @@ body {
   display: flex;
 }
 .header-contact-item {
- 
   margin-right: 40px;
 }
 .header-contact-item:last-child {
@@ -171,17 +165,17 @@ body {
 /*======================HERO=============================*/
 
 .hero {
-  margin-top: 0;
-  margin-bottom: 120px;
   padding-top: 188px;
-  padding-bottom: 203px;
+  padding-bottom: 188px;
   text-align: center;
-  
+
   background: var(--second-color);
 }
 .hero-title {
+  width: 500px;
+  margin: 0 auto;
   margin-top: 0;
-  margin-bottom: 39px;
+  margin-bottom: 48px;
 
   font-size: var(--third-font-size);
   line-height: var(--fours-line-height);
@@ -190,16 +184,16 @@ body {
 }
 .hero-btn {
   border-radius: 4px;
-  padding: 16px, 32px;
+  padding: 16px 32px;
   min-width: 169px;
 
   font-family: inherit;
   font-weight: var(--typical-font-weight);
-  font-size: var(font-size);
   line-height: var(--first-line-height);
   cursor: pointer;
   color: var(--first-color);
   background: var(--fourth-color);
+  border: none;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -208,8 +202,7 @@ body {
 /*======================/HERO============================*/
 /*====================SOLUTIONS==========================*/
 .solutions {
-  padding-top: 0;
-  
+  padding-bottom: 0;
 }
 .solutions-page-title {
   margin-top: 0;
@@ -218,7 +211,6 @@ body {
 
 /*UL*/
 .solutions-list {
- 
   padding: 0;
   margin: 0;
   list-style: none;
@@ -249,12 +241,6 @@ body {
 /*====================/SOLUTIONS=========================*/
 /*=====================SERVICES==========================*/
 
-.services {
-  padding-top: 0;
-  padding-bottom: 120px;
-  
-}
-
 .section-title {
   margin-top: 0;
   margin-bottom: 72px;
@@ -271,50 +257,51 @@ body {
   margin: 0;
   list-style: none;
   display: flex;
+  column-gap: 24px;
 }
 /*li*/
 .services-image-item {
-  
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 24px;
 }
 /*=====================/SERVICES==========================*/
-/*======================ABOUT============================*/
-.about {
+/*======================TEAM============================*/
+.team {
   background: var(--fifth-color);
 }
 /*h2*/
-.section-title {
+.team-title {
   margin-top: 0;
   margin-bottom: 72px;
 }
 /*ul*/
 .list {
   display: flex;
+  column-gap: 24px;
 }
 /*li*/
-.about-img {
- 
+.team-img {
   margin-top: 0;
   margin-bottom: 32px;
-  margin-right: 24px;
+
+  background: var(--first-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .set {
   text-align: center;
 }
 /*h3*/
 .section-subtitle {
-  
   margin-bottom: 8px;
 }
 /*p*/
 .section-text {
   margin-top: 0;
   margin-bottom: 32px;
-  
 }
-/*=====================/ABOUT============================*/
+/*=====================/TEAM============================*/
 /*====================FOOTER=============================*/
 .footer {
   padding-top: 100px;
@@ -350,9 +337,6 @@ body {
   margin-top: 96px;
   margin-bottom: 120px;
 }
-.container {
-  margin-top: 0;
-}
 /*ul*/
 
 .menu-list {
@@ -382,14 +366,11 @@ body {
 }
 /*ul*/
 .portfolio-list {
-  padding: 0;
-  margin: 0;
-
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
 }
+
 .box {
   padding-left: 16px;
   border-bottom: 1px solid var(--sixth-color);
@@ -398,11 +379,16 @@ body {
 }
 /*li*/
 .portfolio-item {
+  margin-bottom: 48px;
+  margin-right: 24px;
+  flex-basis: calc((100% - 48px) / 3);
 }
 /*.portfolio-item * {
   outline: 1px solid green;
 }-для выделения цветом */
-
+.portfolio-item:nth-last-child(3n + 1) {
+  margin-right: 0;
+}
 /*h2*/
 .sec-subtitle {
   line-height: var(--third-line-height);
